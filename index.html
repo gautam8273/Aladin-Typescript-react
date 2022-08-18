@@ -1,0 +1,12 @@
+<script>
+    let a = [2, 8, 5, 3];
+    const printVal = (i) => {
+        setTimeout(() => {
+            if (a[i + 1] !== undefined) {
+                printVal(i + 1)
+            }
+            console.log(a[i])
+        }, a[i] * 1000)
+    }
+    printVal(0)
+</script>
